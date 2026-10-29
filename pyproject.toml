@@ -1,0 +1,27 @@
+[project]
+name = "agent-tool-router"
+version = "0.1.0"
+description = "Strict Pydantic tool router for LLM agents"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "John Houghton" }]
+dependencies = ["pydantic==2.14.1"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+toolrouter = "toolrouter.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["toolrouter*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

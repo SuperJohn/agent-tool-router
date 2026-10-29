@@ -1,0 +1,52 @@
+{
+  "provider": "mock",
+  "provider_label": "mock (scripted small-model errors; not a live model sample)",
+  "seed": 42,
+  "max_retries": 2,
+  "task_count": 22,
+  "recorded_at": "2026-10-29",
+  "dataset": "demo/data",
+  "definitions": {
+    "first_try_valid": "Passed JSON parse and Pydantic on attempt 0.",
+    "valid_after_retry": "Passed within the retry budget, including first-try successes.",
+    "mean_retries": "Average of (attempts - 1) over every task. A first-try success is 0.",
+    "unrecoverable": "Never validated. The tool was not executed.",
+    "task_correct": "Validated, and the tool plus arguments match the task. Not what the retry loop targets."
+  },
+  "with_router": {
+    "tasks": 22,
+    "first_try_valid": 16,
+    "first_try_valid_pct": 72.7,
+    "first_try_valid_display": "72.7% (16/22)",
+    "valid_after_retry": 20,
+    "valid_after_retry_pct": 90.9,
+    "valid_after_retry_display": "90.9% (20/22)",
+    "retry_total": 9,
+    "mean_retries": 0.41,
+    "mean_retries_display": "0.41",
+    "unrecoverable": 2,
+    "unrecoverable_pct": 9.1,
+    "unrecoverable_display": "9.1% (2/22)",
+    "task_correct": 18,
+    "task_correct_pct": 81.8,
+    "task_correct_display": "81.8% (18/22)"
+  },
+  "without_router": {
+    "tasks": 22,
+    "first_try_valid": 6,
+    "first_try_valid_pct": 27.3,
+    "first_try_valid_display": "27.3% (6/22)",
+    "valid_after_retry": 6,
+    "valid_after_retry_pct": 27.3,
+    "valid_after_retry_display": "27.3% (6/22)",
+    "retry_total": 0,
+    "mean_retries": 0.0,
+    "mean_retries_display": "0.00",
+    "unrecoverable": 16,
+    "unrecoverable_pct": 72.7,
+    "unrecoverable_display": "72.7% (16/22)",
+    "task_correct": 4,
+    "task_correct_pct": 18.2,
+    "task_correct_display": "18.2% (4/22)"
+  }
+}
