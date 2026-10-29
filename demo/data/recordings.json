@@ -1,0 +1,203 @@
+{
+  "cal-01": {
+    "raw": [
+      "{\n  \"tool\": \"create_event\",\n  \"arguments\": {\n    \"title\": \"Schema review\",\n    \"start\": \"2026-11-03T15:00:00\",\n    \"end\": \"2026-11-03T15:45:00\",\n    \"location\": \"Lab Room B\"\n  }\n}"
+    ],
+    "constrained": "{\n  \"tool\": \"create_event\",\n  \"arguments\": {\n    \"title\": \"Schema review\",\n    \"start\": \"2026-11-03T15:00:00\",\n    \"end\": \"2026-11-03T15:45:00\",\n    \"location\": \"Lab Room B\"\n  }\n}",
+    "retry": [
+      "{\n  \"tool\": \"create_event\",\n  \"arguments\": {\n    \"title\": \"Schema review\",\n    \"start\": \"2026-11-03T15:00:00\",\n    \"end\": \"2026-11-03T15:45:00\",\n    \"location\": \"Lab Room B\"\n  }\n}"
+    ]
+  },
+  "cal-02": {
+    "raw": [
+      "```json\n{\n  \"tool\": \"list_events\",\n  \"arguments\": {\n    \"day\": \"2026-11-03\"\n  }\n}\n```"
+    ],
+    "constrained": "{\n  \"tool\": \"list_events\",\n  \"arguments\": {\n    \"day\": \"2026-11-03\"\n  }\n}",
+    "retry": [
+      "{\n  \"tool\": \"list_events\",\n  \"arguments\": {\n    \"day\": \"2026-11-03\"\n  }\n}"
+    ]
+  },
+  "cal-03": {
+    "raw": [
+      "{\n  \"tool\": \"create_event\",\n  \"arguments\": {\n    \"title\": \"Vendor hold\",\n    \"start\": \"2026-11-04T10:00:00\",\n    \"end\": \"2026-11-04T10:30:00\",\n  }\n}"
+    ],
+    "constrained": "{\n  \"tool\": \"create_event\",\n  \"arguments\": {\n    \"title\": \"Vendor hold\",\n    \"start\": \"2026-11-04T10:00:00\",\n    \"end\": \"2026-11-04T10:30:00\"\n  }\n}",
+    "retry": [
+      "{\n  \"tool\": \"create_event\",\n  \"arguments\": {\n    \"title\": \"Vendor hold\",\n    \"start\": \"2026-11-04T10:00:00\",\n    \"end\": \"2026-11-04T10:30:00\"\n  }\n}"
+    ]
+  },
+  "cal-04": {
+    "raw": [
+      "{\n  \"tool\": \"create_event\",\n  \"arguments\": {\n    \"title\": \"Grammar pass\",\n    \"start\": \"2026-11-05T14:00:00\",\n    \"end\": \"2026-11-05T13:00:00\",\n    \"location\": \"Lab Room B\"\n  }\n}"
+    ],
+    "constrained": "{\n  \"tool\": \"create_event\",\n  \"arguments\": {\n    \"title\": \"Grammar pass\",\n    \"start\": \"2026-11-05T14:00:00\",\n    \"end\": \"2026-11-05T13:00:00\",\n    \"location\": \"Lab Room B\"\n  }\n}",
+    "retry": [
+      "{\n  \"tool\": \"create_event\",\n  \"arguments\": {\n    \"title\": \"Grammar pass\",\n    \"start\": \"2026-11-05T13:00:00\",\n    \"end\": \"2026-11-05T14:00:00\",\n    \"location\": \"Lab Room B\"\n  }\n}"
+    ]
+  },
+  "cal-05": {
+    "raw": [
+      "{\n  \"tool\": \"cancel_event\",\n  \"arguments\": {\n    \"event_id\": \"EVT-002\"\n  }\n}"
+    ],
+    "constrained": "{\n  \"tool\": \"cancel_event\",\n  \"arguments\": {\n    \"event_id\": \"EVT-002\"\n  }\n}",
+    "retry": [
+      "{\n  \"tool\": \"cancel_event\",\n  \"arguments\": {\n    \"event_id\": \"evt-002\"\n  }\n}",
+      "{\n  \"tool\": \"cancel_event\",\n  \"arguments\": {\n    \"event_id\": \"EVT_002\"\n  }\n}"
+    ]
+  },
+  "cal-06": {
+    "raw": [
+      "I'll book office hours tomorrow afternoon."
+    ],
+    "constrained": "{\n  \"tool\": \"create_event\",\n  \"arguments\": {\n    \"title\": \"Office hours\",\n    \"start\": \"Nov 6 4pm\",\n    \"end\": \"Nov 6 4:30pm\",\n    \"location\": \"Lab Room B\"\n  }\n}",
+    "retry": [
+      "{\n  \"tool\": \"create_event\",\n  \"arguments\": {\n    \"title\": \"Office hours\",\n    \"start\": \"2026-11-06 16:00\",\n    \"end\": \"2026-11-06 16:30\",\n    \"location\": \"Lab Room B\"\n  }\n}",
+      "{\n  \"tool\": \"create_event\",\n  \"arguments\": {\n    \"title\": \"Office hours\",\n    \"start\": \"2026-11-06T16:00:00\",\n    \"end\": \"2026-11-06T16:30:00\",\n    \"location\": \"Lab Room B\"\n  }\n}"
+    ]
+  },
+  "cal-07": {
+    "raw": [
+      "{\n  \"tool\": \"create_event\",\n  \"arguments\": {\n    \"title\": \"Budget sync\",\n    \"start\": \"2026-11-06T09:00:00\",\n    \"end\": \"2026-11-06T09:20:00\",\n    \"location\": \"Lab Room B\",\n    \"attendees\": [\n      \"Avery Chen\"\n    ]\n  }\n}"
+    ],
+    "constrained": "{\n  \"tool\": \"create_event\",\n  \"arguments\": {\n    \"title\": \"Budget sync\",\n    \"start\": \"2026-11-06T09:00:00\",\n    \"end\": \"2026-11-06T09:20:00\",\n    \"location\": \"Lab Room B\"\n  }\n}",
+    "retry": [
+      "{\n  \"tool\": \"create_event\",\n  \"arguments\": {\n    \"title\": \"Budget sync\",\n    \"start\": \"2026-11-06T09:00:00\",\n    \"end\": \"2026-11-06T09:20:00\",\n    \"location\": \"Lab Room B\"\n  }\n}"
+    ]
+  },
+  "cal-08": {
+    "raw": [
+      "{\n  \"tool\": \"create_event\",\n  \"arguments\": {\n    \"title\": \"Retro\",\n    \"start\": \"2026-11-07T16:00:00\",\n    \"end\": \"2026-11-07T15:00:00\",\n    \"location\": \"Lab Room B\"\n  }\n}"
+    ],
+    "constrained": "{\n  \"tool\": \"create_event\",\n  \"arguments\": {\n    \"title\": \"Retro\",\n    \"start\": \"2026-11-07T16:00:00\",\n    \"end\": \"2026-11-07T15:00:00\",\n    \"location\": \"Lab Room B\"\n  }\n}",
+    "retry": [
+      "{\n  \"tool\": \"create_event\",\n  \"arguments\": {\n    \"title\": \"Retro\",\n    \"start\": \"2026-11-07T15:00:00\",\n    \"end\": \"2026-11-07T15:00:00\",\n    \"location\": \"Lab Room B\"\n  }\n}",
+      "{\n  \"tool\": \"create_event\",\n  \"arguments\": {\n    \"title\": \"Retro\",\n    \"start\": \"2026-11-07T16:00:00\",\n    \"end\": \"2026-11-07T15:30:00\",\n    \"location\": \"Lab Room B\"\n  }\n}"
+    ]
+  },
+  "cal-09": {
+    "raw": [
+      "{\n  \"tool\": \"create_event\",\n  \"arguments\": {\n    \"title\": \"Lab walkthrough\",\n    \"start\": \"2026-11-13T10:00:00\",\n    \"end\": \"2026-11-13T11:00:00\",\n    \"location\": \"Lab Room B\"\n  }\n}"
+    ],
+    "constrained": "{\n  \"tool\": \"create_event\",\n  \"arguments\": {\n    \"title\": \"Lab walkthrough\",\n    \"start\": \"2026-11-13T10:00:00\",\n    \"end\": \"2026-11-13T11:00:00\",\n    \"location\": \"Lab Room B\"\n  }\n}",
+    "retry": [
+      "{\n  \"tool\": \"create_event\",\n  \"arguments\": {\n    \"title\": \"Lab walkthrough\",\n    \"start\": \"2026-11-13T10:00:00\",\n    \"end\": \"2026-11-13T11:00:00\",\n    \"location\": \"Lab Room B\"\n  }\n}"
+    ]
+  },
+  "trk-01": {
+    "raw": [
+      "{\n  \"tool\": \"log_time\",\n  \"arguments\": {\n    \"project\": \"atlas\",\n    \"minutes\": 45,\n    \"note\": \"export reduced schema\"\n  }\n}"
+    ],
+    "constrained": "{\n  \"tool\": \"log_time\",\n  \"arguments\": {\n    \"project\": \"atlas\",\n    \"minutes\": 45,\n    \"note\": \"export reduced schema\"\n  }\n}",
+    "retry": [
+      "{\n  \"tool\": \"log_time\",\n  \"arguments\": {\n    \"project\": \"atlas\",\n    \"minutes\": 45,\n    \"note\": \"export reduced schema\"\n  }\n}"
+    ]
+  },
+  "trk-02": {
+    "raw": [
+      "{\n  \"tool\": \"log_time\",\n  \"arguments\": {\n    \"project\": \"beacon\",\n    \"minutes\": \"90\",\n    \"note\": \"replay harness\"\n  }\n}"
+    ],
+    "constrained": "{\n  \"tool\": \"log_time\",\n  \"arguments\": {\n    \"project\": \"beacon\",\n    \"minutes\": 90,\n    \"note\": \"replay harness\"\n  }\n}",
+    "retry": [
+      "{\n  \"tool\": \"log_time\",\n  \"arguments\": {\n    \"project\": \"beacon\",\n    \"minutes\": 90,\n    \"note\": \"replay harness\"\n  }\n}"
+    ]
+  },
+  "trk-03": {
+    "raw": [
+      "{\n  \"tool\": \"log_time\",\n  \"arguments\": {\n    \"project\": \"cedar\",\n    \"minutes\": 900,\n    \"note\": \"grammar notes\"\n  }\n}"
+    ],
+    "constrained": "{\n  \"tool\": \"log_time\",\n  \"arguments\": {\n    \"project\": \"cedar\",\n    \"minutes\": 90,\n    \"note\": \"grammar notes\"\n  }\n}",
+    "retry": [
+      "{\n  \"tool\": \"log_time\",\n  \"arguments\": {\n    \"project\": \"cedar\",\n    \"minutes\": 90,\n    \"note\": \"grammar notes\"\n  }\n}"
+    ]
+  },
+  "trk-04": {
+    "raw": [
+      "{\n  \"tool\": \"log_time\",\n  \"arguments\": {\n    \"project\": \"Atlas\",\n    \"minutes\": 30,\n    \"note\": \"enum check\"\n  }\n}"
+    ],
+    "constrained": "{\n  \"tool\": \"log_time\",\n  \"arguments\": {\n    \"project\": \"atlas\",\n    \"minutes\": 30,\n    \"note\": \"enum check\"\n  }\n}",
+    "retry": [
+      "{\n  \"tool\": \"log_time\",\n  \"arguments\": {\n    \"project\": \"atlas\",\n    \"minutes\": 30,\n    \"note\": \"enum check\"\n  }\n}"
+    ]
+  },
+  "trk-05": {
+    "raw": [
+      "{\n  \"tool\": \"set_status\",\n  \"arguments\": {\n    \"ticket_id\": \"tkt_012\",\n    \"status\": \"In Progress\"\n  }\n}"
+    ],
+    "constrained": "{\n  \"tool\": \"set_status\",\n  \"arguments\": {\n    \"ticket_id\": \"tkt_012\",\n    \"status\": \"in_progress\"\n  }\n}",
+    "retry": [
+      "{\n  \"tool\": \"set_status\",\n  \"arguments\": {\n    \"ticket_id\": \"tkt_012\",\n    \"status\": \"in_progress\"\n  }\n}"
+    ]
+  },
+  "trk-06": {
+    "raw": [
+      "{\n  \"tool\": \"set_status\",\n  \"arguments\": {\n    \"ticket_id\": \"tkt-018\",\n    \"status\": \"blocked\"\n  }\n}"
+    ],
+    "constrained": "{\n  \"tool\": \"set_status\",\n  \"arguments\": {\n    \"ticket_id\": \"tkt-018\",\n    \"status\": \"blocked\"\n  }\n}",
+    "retry": [
+      "{\n  \"tool\": \"set_status\",\n  \"arguments\": {\n    \"ticket_id\": \"tkt_018\",\n    \"status\": \"blocked\"\n  }\n}"
+    ]
+  },
+  "trk-07": {
+    "raw": [
+      "{\n  \"tool\": \"log_time\",\n  \"arguments\": {\n    \"project\": \"cedar\",\n    \"minutes\": 15,\n    \"note\": \"\"\n  }\n}"
+    ],
+    "constrained": "{\n  \"tool\": \"log_time\",\n  \"arguments\": {\n    \"project\": \"cedar\",\n    \"minutes\": 15,\n    \"note\": \"empty note rejected\"\n  }\n}",
+    "retry": [
+      "{\n  \"tool\": \"log_time\",\n  \"arguments\": {\n    \"project\": \"cedar\",\n    \"minutes\": 15,\n    \"note\": \"empty note rejected\"\n  }\n}"
+    ]
+  },
+  "trk-08": {
+    "raw": [
+      "{\n  \"tool\": \"update_ticket\",\n  \"arguments\": {\n    \"ticket_id\": \"tkt_012\",\n    \"status\": \"done\"\n  }\n}"
+    ],
+    "constrained": "{\n  \"tool\": \"set_status\",\n  \"arguments\": {\n    \"ticket_id\": \"tkt_012\",\n    \"status\": \"done\"\n  }\n}",
+    "retry": [
+      "{\n  \"tool\": \"set_status\",\n  \"arguments\": {\n    \"ticket_id\": \"tkt_012\",\n    \"status\": \"done\"\n  }\n}"
+    ]
+  },
+  "trk-09": {
+    "raw": [
+      "{\n  \"tool\": \"log_time\",\n  \"arguments\": {\n    \"project\": \"beacon\",\n    \"minutes\": 1.5,\n    \"note\": \"strict floats\"\n  }\n}"
+    ],
+    "constrained": "{\n  \"tool\": \"log_time\",\n  \"arguments\": {\n    \"project\": \"beacon\",\n    \"minutes\": 25,\n    \"note\": \"strict floats\"\n  }\n}",
+    "retry": [
+      "{\n  \"tool\": \"log_time\",\n  \"arguments\": {\n    \"project\": \"beacon\",\n    \"minutes\": 25,\n    \"note\": \"strict floats\"\n  }\n}"
+    ]
+  },
+  "look-01": {
+    "raw": [
+      "{\n  \"tool\": \"lookup_contact\",\n  \"arguments\": {\n    \"name\": \"Avery Chen\"\n  }\n}"
+    ],
+    "constrained": "{\n  \"tool\": \"lookup_contact\",\n  \"arguments\": {\n    \"name\": \"Avery Chen\"\n  }\n}",
+    "retry": [
+      "{\n  \"tool\": \"lookup_contact\",\n  \"arguments\": {\n    \"name\": \"Avery Chen\"\n  }\n}"
+    ]
+  },
+  "look-02": {
+    "raw": [
+      "{\n  \"tool\": \"lookup_doc\",\n  \"arguments\": {\n    \"doc_id\": \"DOC_SCHEMA\"\n  }\n}"
+    ],
+    "constrained": "{\n  \"tool\": \"lookup_doc\",\n  \"arguments\": {\n    \"doc_id\": \"DOC_SCHEMA\"\n  }\n}",
+    "retry": [
+      "{\n  \"tool\": \"lookup_doc\",\n  \"arguments\": {\n    \"doc_id\": \"doc_schema\"\n  }\n}"
+    ]
+  },
+  "look-03": {
+    "raw": [
+      "{\n  \"tool\": \"lookup_contact\",\n  \"arguments\": \"{\\\"name\\\": \\\"Priya Nair\\\"}\"\n}"
+    ],
+    "constrained": "{\n  \"tool\": \"lookup_contact\",\n  \"arguments\": {\n    \"name\": \"Priya Nair\"\n  }\n}",
+    "retry": [
+      "{\n  \"tool\": \"lookup_contact\",\n  \"arguments\": {\n    \"name\": \"Priya Nair\"\n  }\n}"
+    ]
+  },
+  "look-04": {
+    "raw": [
+      "{\n  \"tool\": \"lookup_contact\",\n  \"arguments\": {\n    \"name\": \"Priya N.\"\n  }\n}"
+    ],
+    "constrained": "{\n  \"tool\": \"lookup_contact\",\n  \"arguments\": {\n    \"name\": \"Priya N.\"\n  }\n}",
+    "retry": [
+      "{\n  \"tool\": \"lookup_contact\",\n  \"arguments\": {\n    \"name\": \"Priya N.\"\n  }\n}"
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>agent-tool-router · Houghton Labs</title>
+  <meta name="description" content="Replay of a strict Pydantic tool router: raw model output, the validation error, the retry prompt, and the corrected call." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/site.css" />
+</head>
+<body>
+  <div class="page">
+    <header id="hero">
+      <div class="topline">
+        <a class="mark" href="https://houghtonlabs.com">HL</a>
+        <div class="brand-block">
+          <div class="kicker">Houghton Labs</div>
+          <a class="site" href="https://houghtonlabs.com">houghtonlabs.com</a>
+        </div>
+        <div class="topline-note">synthetic fixtures · local replay</div>
+      </div>
+      <h1>agent-tool-router</h1>
+      <p class="pitch">A tool call is a Pydantic model. The router asks the provider for that JSON schema when it can constrain decoding, validates the call, and on failure sends the error trace back. After the retry budget it returns a structured error and does not execute the tool.</p>
+      <p class="meta" id="run-meta">Loading the recorded run…</p>
+      <section id="scoreboard" aria-label="Scoreboard"></section>
+    </header>
+
+    <div class="work">
+      <aside id="list" aria-label="Tasks"></aside>
+      <article id="stage" aria-live="polite"></article>
+    </div>
+
+    <footer id="foot">
+      <p>Houghton Labs · MIT · synthetic data only · replay of <span class="path">site/data/scoreboard.json</span> and <span class="path">site/data/traces.json</span>.</p>
+      <p>Live demo: not deployed yet. Cloudflare Pages project <span class="path">agent-tool-router</span>, production branch <span class="path">main</span>, framework none, output directory <span class="path">site</span>.</p>
+    </footer>
+  </div>
+  <noscript>This page replays recorded JSON. Enable JavaScript, and serve the folder over HTTP so it can read site/data.</noscript>
+  <script src="assets/site.js"></script>
+</body>
+</html>
